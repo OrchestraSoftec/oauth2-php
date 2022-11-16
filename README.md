@@ -1,4 +1,4 @@
-OAuth2 Server Implementation
+OAuth2 Server Implementation by SFTC
 ============================
 
 [![Build Status](https://secure.travis-ci.org/FriendsOfSymfony/oauth2-php.png?branch=master)](http://travis-ci.org/FriendsOfSymfony/oauth2-php)
