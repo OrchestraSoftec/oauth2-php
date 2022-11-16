@@ -163,14 +163,14 @@ class OAuth2StoragePdo implements IOAuth2GrantCode, IOAuth2RefreshTokens
      */
     public function unsetRefreshToken($refreshToken)
     {
-        try {
-            $sql = 'DELETE FROM '.self::TABLE_TOKENS.' WHERE refresh_token = :refresh_token';
-            $stmt = $this->db->prepare($sql);
-            $stmt->bindParam(':refresh_token', $refreshToken, PDO::PARAM_STR);
-            $stmt->execute();
-        } catch (PDOException $e) {
-            $this->handleException($e);
-        }
+        // try {
+        //     $sql = 'DELETE FROM '.self::TABLE_TOKENS.' WHERE refresh_token = :refresh_token';
+        //     $stmt = $this->db->prepare($sql);
+        //     $stmt->bindParam(':refresh_token', $refreshToken, PDO::PARAM_STR);
+        //     $stmt->execute();
+        // } catch (PDOException $e) {
+        //     $this->handleException($e);
+        // }
     }
 
     /**

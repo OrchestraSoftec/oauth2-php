@@ -1337,7 +1337,7 @@ class OAuth2
 
             // If we've granted a new refresh token, expire the old one
             if (null !== $this->oldRefreshToken) {
-                $this->storage->unsetRefreshToken($this->oldRefreshToken);
+                //$this->storage->unsetRefreshToken($this->oldRefreshToken);
                 $this->oldRefreshToken = null;
             }
         }
